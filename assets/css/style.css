@@ -919,6 +919,10 @@ ul {
   letter-spacing: -0.4px;
   box-shadow: none !important;
 }
+.faq-content .accordion-item .accordion-button::after {
+  background: transparent;
+  content: url(../images/icons/plus.svg);
+}
 .faq-content .accordion-item .accordion-button:focus-visible {
   outline: none;
 }
@@ -944,9 +948,96 @@ ul {
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   box-shadow: none !important;
 }
+.faq-content .accordion-item.active .accordion-button::after {
+  background: transparent;
+  content: url(../images/icons/minus.svg);
+}
 .faq-content .accordion-item.active .accordion-body {
   padding: 14px 0px 28px 0px;
   border: none;
 }
 
 /*-- faq style end --*/
+/*-- contact style start --*/
+.contact-section {
+  border-radius: 20px;
+  background: #FAFAFA;
+  box-shadow: 0px 4px 48px 0px rgba(0, 0, 0, 0.11);
+  padding: 50px 0px;
+}
+
+.contant-title {
+  margin-bottom: 32px;
+  margin-top: 20px;
+  max-width: 360px;
+}
+.contant-title h2 {
+  color: #000;
+  font-size: 39px;
+  font-weight: 700;
+  letter-spacing: -0.78px;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+.contant-title p {
+  color: #1C1C1C;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 138.889%;
+}
+
+.contact-card {
+  border-radius: 15px;
+  background: #FFF;
+  padding: 24px;
+  max-width: 328px;
+  margin-bottom: 20px;
+}
+.contact-card .contact-icon {
+  width: 69px;
+  height: 63px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 13px;
+  background: #DBEAFE;
+  margin-bottom: 24px;
+  overflow: hidden;
+}
+.contact-card a {
+  margin-bottom: 15px;
+  display: flex;
+  color: #000;
+  font-size: 25px;
+  font-weight: 700;
+}
+.contact-card a span {
+  font-family: monospace;
+}
+.contact-card p {
+  color: #4A4A4A;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 150%;
+}
+
+.contact-form {
+  border-radius: 20px;
+  background: #FFF;
+  padding: 32px;
+}
+
+.contact-form-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 32px;
+}
+.contact-form-title h2 {
+  color: #000;
+  font-size: 50px;
+  font-weight: 600;
+  letter-spacing: -1px;
+}
+
+/*-- contact style end --*/
