@@ -631,7 +631,8 @@ ul {
 .portfolio-item-2 .shape {
   transform: rotate(-168.18deg);
   position: absolute;
-  right: 0px;
+  right: -13px;
+  width: 50px;
   top: 13%;
   z-index: 0;
 }
@@ -824,7 +825,8 @@ ul {
   background: #DBEAFE;
   border: 1px solid #DBEAFE;
   border-radius: 50%;
-  right: 46%;
+  right: auto;
+  left: 51%;
   transform: translateY(32px);
   top: 100%;
   z-index: 11;
@@ -847,7 +849,8 @@ ul {
   background: #DBEAFE;
   border: 1px solid #DBEAFE;
   border-radius: 50%;
-  left: 46%;
+  left: auto;
+  right: 51%;
   transform: translateY(32px);
   top: 100%;
   z-index: 11;
@@ -979,10 +982,10 @@ ul {
 .faq-content .shape {
   transform: rotate(-23deg);
   position: absolute;
-  left: -26px;
-  bottom: -25px;
+  left: -41px;
+  bottom: -36px;
   z-index: 0;
-  z-index: 0;
+  width: 49px;
 }
 .faq-content .accordion-item {
   margin-bottom: 25px;
