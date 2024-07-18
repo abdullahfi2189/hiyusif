@@ -1,0 +1,32 @@
+@media only screen and (max-width: 1600px) {
+  .testimonials-section .testimonials-slider {
+    margin: 0px;
+  }
+}
+@media only screen and (max-width: 1300px) {
+  .testimonials-section .testimonials-slider {
+    margin: 0px 100px;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .services-section {
+    padding: 80px 0px;
+  }
+  .portfolio-highlights-heading {
+    margin-bottom: 50px;
+  }
+  .portfolio-item-text h4 {
+    font-size: 28px;
+  }
+  .portfolio-highlights {
+    padding-bottom: 25px;
+  }
+}
+@media only screen and (max-width: 1100px) {
+  .testimonials-section .testimonials-slider {
+    margin: 0px 20px;
+  }
+  .avater.desktop {
+    right: 47%;
+  }
+}

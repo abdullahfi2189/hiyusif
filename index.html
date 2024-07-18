@@ -74,7 +74,7 @@
         <!-- banner-section end -->
 
         <!-- portfolio section start -->
-         <div class="container">
+        <div class="container">
             <div class="get-start-badge">
                 <div class="get-start-badge-inner">
                     <div class="badge">
@@ -83,7 +83,7 @@
                     </div>
                 </div>
             </div>
-         </div>
+        </div>
         <section class="portfolio-section">
             <div class="portfolio-content left">
                 <div class="portfolio-img">
@@ -868,6 +868,20 @@
                 dots: false,
                 centerMode: true,
                 focusOnSelect: true,
+                responsive: [
+                    {
+                        breakpoint: 1300,
+                        settings: {
+                            slidesToShow: 2,
+                        }
+                    },
+                    {
+                        breakpoint: 480,
+                        settings: {
+                            
+                        }
+                    }
+                ]
             });
         }
 
