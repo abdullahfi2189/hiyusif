@@ -48,12 +48,6 @@ ul {
   list-style: none;
 }
 
-.container {
-  max-width: 1320px;
-  width: 100%;
-  padding: 0px 20px;
-}
-
 .primary-btn {
   display: flex;
   align-items: center;
@@ -109,6 +103,17 @@ ul {
   align-items: center;
   justify-content: space-between;
   padding: 20px 0px;
+}
+.header-inner .mobile-menu {
+  display: none;
+}
+.header-inner .mobile-menu .mobile-menu-btn {
+  border: none;
+  outline: none;
+  border-radius: 11px;
+  background: #F5F5F5;
+  height: 44px;
+  width: 44px;
 }
 .header-inner .header-left {
   display: flex;
@@ -574,6 +579,47 @@ ul {
   position: relative;
 }
 
+.portfolio-view-btn {
+  margin-bottom: 60px;
+  padding-top: 8px;
+  display: none;
+}
+.portfolio-view-btn .view-btn {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 20px;
+  border-radius: 50%;
+  border: 1.5px solid #17191A;
+  height: 120px;
+  width: 120px;
+  overflow: hidden;
+  color: #17191A;
+  font-size: 14px;
+  line-height: normal;
+  transition: 0.4s;
+  margin: auto;
+}
+.portfolio-view-btn .view-btn span {
+  font-weight: 600;
+  letter-spacing: -0.32px;
+  text-align: left;
+  transition: 0.4s;
+}
+.portfolio-view-btn .view-btn u {
+  font-weight: 700;
+  text-align: right;
+  transition: 0.4s;
+}
+.portfolio-view-btn .view-btn:hover span {
+  animation: moveRight 0.3s;
+  transform: translateX(27px);
+}
+.portfolio-view-btn .view-btn:hover u {
+  animation: moveLeft 0.3s;
+  transform: translateX(-27px);
+}
+
 .avater {
   height: 90px;
   width: 90px;
@@ -867,22 +913,22 @@ ul {
 .testimonials-section .testimonials-slider .slick-prev:hover::before {
   filter: brightness(100);
 }
-.testimonials-section .testimonials-slider .slick-current.slick-active.slick-center .testimonials-card {
+.testimonials-section .testimonials-slider .slick-current.slick-active .testimonials-card {
   background: #1D417F;
 }
-.testimonials-section .testimonials-slider .slick-current.slick-active.slick-center .testimonials-card p {
+.testimonials-section .testimonials-slider .slick-current.slick-active .testimonials-card p {
   color: #FFFFFF;
 }
-.testimonials-section .testimonials-slider .slick-current.slick-active.slick-center .testimonials-card .user h5 {
+.testimonials-section .testimonials-slider .slick-current.slick-active .testimonials-card .user h5 {
   color: #FFFFFF;
 }
-.testimonials-section .testimonials-slider .slick-current.slick-active.slick-center .testimonials-card .user h6 {
+.testimonials-section .testimonials-slider .slick-current.slick-active .testimonials-card .user h6 {
   color: #FFFFFF;
 }
-.testimonials-section .testimonials-slider .slick-current.slick-active.slick-center .testimonials-card .testimonials-logo .light {
+.testimonials-section .testimonials-slider .slick-current.slick-active .testimonials-card .testimonials-logo .light {
   display: block;
 }
-.testimonials-section .testimonials-slider .slick-current.slick-active.slick-center .testimonials-card .testimonials-logo .dark {
+.testimonials-section .testimonials-slider .slick-current.slick-active .testimonials-card .testimonials-logo .dark {
   display: none;
 }
 .testimonials-section .testimonials-card {
@@ -1204,6 +1250,10 @@ ul {
 /*-- footer style start --*/
 .footer-section {
   padding: 44px 0px;
+}
+
+.footer-mobile-logo {
+  display: none;
 }
 
 .footer-content {

@@ -49,12 +49,6 @@ ul {
     list-style: none;
 }
 
-.container {
-    max-width: 1320px;
-    width: 100%;
-    padding: 0px 20px;
-}
-
 .primary-btn {
     display: flex;
     align-items: center;
@@ -115,7 +109,17 @@ ul {
     align-items: center;
     justify-content: space-between;
     padding: 20px 0px;
-
+    .mobile-menu{
+        display: none;
+        .mobile-menu-btn{
+            border: none;
+            outline: none;
+            border-radius: 11px;
+            background: #F5F5F5;
+            height: 44px;
+            width: 44px;
+        }
+    }
     .header-left {
         display: flex;
         align-items: center;
@@ -637,6 +641,49 @@ ul {
     justify-content: center;
     position: relative;
 }
+.portfolio-view-btn{
+    margin-bottom: 60px;
+    padding-top: 8px;
+    display: none;
+    .view-btn {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        padding: 20px;
+        border-radius: 50%;
+        border: 1.5px solid #17191A;
+        height: 120px;
+        width: 120px;
+        overflow: hidden;
+        color: #17191A;
+        font-size: 14px;
+        line-height: normal;
+        transition: 0.4s;
+        margin: auto;
+        span {
+            font-weight: 600;
+            letter-spacing: -0.32px;
+            text-align: left;
+            transition: 0.4s;
+        }
+        u {
+            font-weight: 700;
+            text-align: right;
+            transition: 0.4s;
+        }
+        &:hover {
+            span {
+                animation: moveRight 0.3s;
+                transform: translateX(27px);
+            }
+
+            u {
+                animation: moveLeft 0.3s;
+                transform: translateX(-27px);
+            }
+        }
+    }
+}
 .avater {
     height: 90px;
     width: 90px;
@@ -932,27 +979,25 @@ ul {
         }
         .slick-current{
             &.slick-active{
-                &.slick-center{
-                    .testimonials-card{
-                        background: #1D417F;
-                        p{
+                .testimonials-card{
+                    background: #1D417F;
+                    p{
+                        color: #FFFFFF;
+                    }
+                    .user{
+                        h5{
                             color: #FFFFFF;
                         }
-                        .user{
-                            h5{
-                                color: #FFFFFF;
-                            }
-                            h6{
-                                color: #FFFFFF;
-                            }
+                        h6{
+                            color: #FFFFFF;
                         }
-                        .testimonials-logo{
-                            .light{
-                                display: block;
-                            }
-                            .dark{
-                                display: none;
-                            }
+                    }
+                    .testimonials-logo{
+                        .light{
+                            display: block;
+                        }
+                        .dark{
+                            display: none;
                         }
                     }
                 }
@@ -1278,6 +1323,9 @@ ul {
 /*-- footer style start --*/
 .footer-section{
     padding: 44px 0px;
+}
+.footer-mobile-logo{
+    display: none;
 }
 .footer-content{
     display: flex;
